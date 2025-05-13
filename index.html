@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,9 +8,6 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 10px; }
     .view-toggle { margin-bottom: 10px; }
-    .bookmark {
-      background-color: #ccc;
-    }
     .bookmarks.grid .bookmark {
       display: inline-block;
       width: 120px;
@@ -27,6 +25,16 @@
     .bookmark a {
       text-decoration: none;
       color: #333;
+    }
+    .folder {
+      margin-top: 10px;
+    }
+    .folder h3 {
+      margin: 10px 0 5px;
+      cursor: pointer; 
+    }
+    .folder-content.collapsed {
+      display: none;
     }
   </style>
 </head>
