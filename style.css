@@ -1,0 +1,61 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+.view-toggle {
+  margin-bottom: 10px;
+}
+
+.bookmarks.grid .bookmark {
+  display: inline-block;
+  width: 120px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.bookmarks.list .bookmark {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.bookmark a {
+  text-decoration: none;
+  color: #333;
+}
+
+.folder {
+  border: 1px solid #ddd; /* 🔽 Nuevo: marco visual por jerarquía */
+  padding: 8px;
+  margin: 8px;
+}
+
+.folder h3 {
+  margin: 10px 0 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.folder h3 .arrow {
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.folder-content.collapsed {
+  display: none;
+}
+
+.folder.collapsed h3 .arrow {
+  transform: rotate(-90deg); /* 🔽 Triángulo a la derecha */
+}
+
+.folder.expanded h3 .arrow {
+  transform: rotate(0deg); /* 🔽 Triángulo hacia abajo */
+}
