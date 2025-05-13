@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Apóyanos con una Donación</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="paypal-config.js"></script>
+</head>
+<body>
+  <h2>¿Te gusta esta extensión?</h2>
+  <p>Puedes apoyarnos con una donación vía PayPal.</p>
+  
+  <!-- Formulario de donación, solo aparecerá si el ID está configurado -->
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="hosted_button_id" id="paypal-button-id" />
+    <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donar con PayPal" />
+    <img alt="" border="0" src="https://www.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1" />
+  </form>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const paypalButtonIdField = document.getElementById("paypal-button-id");
+
+      // Verificar si la variable PAYPAL_BUTTON_ID está configurada
+      if (typeof PAYPAL_BUTTON_ID !== "undefined") {
+        paypalButtonIdField.value = PAYPAL_BUTTON_ID; // Establecer el valor del botón de PayPal
+      } else {
+        // Si no está configurado, ocultar el formulario y mostrar mensaje
+        document.querySelector("form").style.display = "none";
+        document.body.innerHTML += "<p style='color:red'>¡Error! El ID de PayPal no está configurado. Por favor, configura el archivo paypal-config.js correctamente.</p>";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -11,6 +11,7 @@ Este proyecto es una extensión para navegadores Chromium (Chrome, Edge, Brave) 
 - `popup.js`        
 - `style.css`       
 - `icon.png`        
+- `donate.html`     ⬆️ Nueva página para recibir donaciones via PayPal
 
 ## ⚙️ Instalación y Prueba
 
@@ -29,6 +30,7 @@ Este proyecto es una extensión para navegadores Chromium (Chrome, Edge, Brave) 
 - **Expandir / Contraer**: Haz clic en el título de la carpeta para alternar.
 - **Icono dinámico**: Triángulo ▶ (colapsado) / ▼ (expandido).
 - **Jerarquía visual**: Sangría y borde en cada nivel de carpeta.
+- **Donaciones PayPal**: Accede a `donate.html` para apoyar el proyecto.
 
 ## 🛠️ Desarrollo
 
@@ -41,7 +43,7 @@ Este proyecto es una extensión para navegadores Chromium (Chrome, Edge, Brave) 
 1. Empaqueta tu extensión en un `.zip` (sin archivos innecesarios).
 2. Regístrate como desarrollador en la Chrome Web Store.
 3. Sube el paquete y completa la ficha de la tienda.
-4. Paga la tarifa única de \$5 USD.
+4. Paga la tarifa única de $5 USD.
 
 ## 🤝 Contribuciones
 
