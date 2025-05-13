@@ -1,0 +1,17 @@
+
+{
+  "manifest_version": 3,
+  "name": "Visor de Marcadores",
+  "version": "1.0",
+  "description": "Visualiza tus marcadores en vista lista o cuadrícula.",
+  "permissions": ["bookmarks"],
+  "action": {
+    "default_icon": {
+      "128": "icon.png"
+    },
+    "default_title": "Abrir visor de marcadores"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

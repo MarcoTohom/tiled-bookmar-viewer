@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Marcadores</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 10px; }
+    .view-toggle { margin-bottom: 10px; }
+    .bookmark {
+      background-color: #ccc;
+    }
+    .bookmarks.grid .bookmark {
+      display: inline-block;
+      width: 120px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: center;
+      height: 100px;
+    }
+    .bookmarks.list .bookmark {
+      border-bottom: 1px solid #ccc;
+      padding: 5px 0;
+      margin: 5px;
+    }
+    .bookmark a {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="view-toggle">
+    <button id="listView">Lista</button>
+    <button id="gridView">Cuadrícula</button>
+  </div>
+  <div id="bookmarks" class="bookmarks grid"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
