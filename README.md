@@ -36,12 +36,6 @@ Este proyecto es una extensión para navegadores Chromium (Chrome, Edge, Brave) 
 - Modifica `renderBookmarks` en `popup.js` para ajustar la lógica.
 - Usa `manifest.json` para agregar permisos o background scripts adicionales.
 
-## 🚀 Publicación (Opcional)
-
-1. Empaqueta tu extensión en un `.zip` (sin archivos innecesarios).
-2. Regístrate como desarrollador en la Chrome Web Store.
-3. Sube el paquete y completa la ficha de la tienda.
-4. Paga la tarifa única de \$5 USD.
 
 ## 🤝 Contribuciones
 
