@@ -4,7 +4,7 @@
   "name": "Visor de Marcadores",
   "version": "1.0",
   "description": "Visualiza tus marcadores en vista lista o cuadrícula.",
-  "permissions": ["bookmarks", "storage"],
+  "permissions": ["bookmarks", "storage", "favicon"],
   "icons": {
     "128": "icon.png"
   },

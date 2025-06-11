@@ -8,6 +8,16 @@ document.getElementById('gridView').addEventListener('click', () => {
   document.getElementById('bookmarks').className = 'bookmarks grid';
 });
 
+
+const getFaviconUrl = (url) => {
+  try {
+    const { hostname } = new URL(url);
+    return `https://www.google.com/s2/favicons?domain=${hostname}&sz=32`;
+  } catch (e) {
+    return '';
+  }
+};
+
 // 🔽 Función actualizada con icono dinámico y agrupación visual por jerarquía
 function renderBookmarks(bookmarks, container, depth = 0) {
   bookmarks.forEach(bookmark => {
@@ -42,20 +52,11 @@ function renderBookmarks(bookmarks, container, depth = 0) {
     } else if (bookmark.url) {
       const el = document.createElement('div');
       el.className = 'bookmark';
-
-      const link = document.createElement('a');
-      link.href = bookmark.url;
-      link.target = '_blank';
-
-      const img = document.createElement('img');
-      img.src = 'chrome://favicon/size/16@1x/' + bookmark.url;
-      img.alt = 'Favicon';
-      img.className = 'favicon-img'; // Added class for styling
-
-      link.appendChild(img);
-      link.appendChild(document.createTextNode(bookmark.title));
-
-      el.appendChild(link);
+      el.innerHTML = `
+        <a href="${bookmark.url}" target="_blank" class="bookmark-link">
+          <img src="${getFaviconUrl(bookmark.url)}" alt="Favicon" class="favicon-img">
+          ${bookmark.title}
+        </a>`     ;
       container.appendChild(el);
     }
   });

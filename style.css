@@ -66,3 +66,11 @@ body {
   margin-right: 5px;
   vertical-align: middle;
 }
+
+.bookmark-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: inherit;
+}
