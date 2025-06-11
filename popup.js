@@ -42,7 +42,20 @@ function renderBookmarks(bookmarks, container, depth = 0) {
     } else if (bookmark.url) {
       const el = document.createElement('div');
       el.className = 'bookmark';
-      el.innerHTML = `<a href="${bookmark.url}" target="_blank">${bookmark.title}</a>`;
+
+      const link = document.createElement('a');
+      link.href = bookmark.url;
+      link.target = '_blank';
+
+      const img = document.createElement('img');
+      img.src = 'chrome://favicon/size/16@1x/' + bookmark.url;
+      img.alt = 'Favicon';
+      img.className = 'favicon-img'; // Added class for styling
+
+      link.appendChild(img);
+      link.appendChild(document.createTextNode(bookmark.title));
+
+      el.appendChild(link);
       container.appendChild(el);
     }
   });
