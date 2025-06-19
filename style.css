@@ -10,13 +10,13 @@ body {
 }
 
 .bookmark {
-  height: 60px;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
 
 .bookmarks.grid .bookmark {
+  height: 60px;
   display: inline-block;
   width: 120px;
   margin: 5px;
@@ -26,6 +26,7 @@ body {
 }
 
 .bookmarks.list .bookmark {
+  height: 20px;
   border-bottom: 1px solid #ccc;
   padding: 5px 0;
 }
