@@ -9,6 +9,21 @@ body {
   margin-bottom: 10px;
 }
 
+.btn-primary {
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #0070ba;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .bookmarks.grid .bookmark {
   display: inline-block;
   width: 120px;
