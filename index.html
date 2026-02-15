@@ -6,19 +6,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div style="margin-top: 20px; text-align: center;">
-  <a href="donate.html" target="_blank">
-    <button
-      style="padding: 10px 16px; font-size: 14px; background-color: #0070ba; color: white; border: none; border-radius: 4px; cursor: pointer;">
-      💖 Apóyanos con una Donación
-    </button>
-  </a>
-</div>
   <div class="view-toggle">
-    <button id="listView">Lista</button>
-    <button id="gridView">Cuadrícula</button>
+    <button id="listView" class="btn-primary">Lista</button>
+    <button id="gridView" class="btn-primary">Cuadrícula</button>
   </div>
   <div id="bookmarks" class="bookmarks grid"></div>
+  <footer class="footer">
+    <a href="donate.html" target="_blank">
+      <button class="btn-primary">
+        💖 Apóyanos con una Donación
+      </button>
+    </a>
+  </footer>
   <script src="popup.js"></script>
 </body>
 </html>
